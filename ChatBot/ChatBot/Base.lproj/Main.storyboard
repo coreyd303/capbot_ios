@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChatBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot58" translatesAutoresizingMaskIntoConstraints="NO" id="RA3-fS-qUw">
+                                <rect key="frame" x="30" y="367" width="180" height="326"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="speech-bubble" translatesAutoresizingMaskIntoConstraints="NO" id="e9S-74-9EI">
+                                <rect key="frame" x="25" y="242" width="334" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="XiW-cO-v7W"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Who knows Java?" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YPR-le-Hp3">
+                                <rect key="frame" x="26" y="166" width="323" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="How can I help you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z67-Z1-Hca">
+                                <rect key="frame" x="116" y="137" width="153" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="950" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcK-jl-hFe">
+                                <rect key="frame" x="62" y="264" width="260" height="115"/>
+                                <string key="text">Hey, I'm CapBot! I can answer questions about domain expertise and specific skills. Try asking: "Who knows Java?" or "Who's a PMP?", and I'll give you back a list of people I find!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkb-TT-QnR">
+                                <rect key="frame" x="130" y="204" width="124" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="GuM-Kl-uWV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Ask ChatBot!">
+                                    <color key="titleColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doSubmitQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7OR-GE-dMn"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="sVL-rd-jId">
+                                <rect key="frame" x="25" y="11" width="324" height="118"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="118" id="bwU-Ms-zN5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e9S-74-9EI" firstAttribute="width" secondItem="GcK-jl-hFe" secondAttribute="height" multiplier="334:115" id="1T3-v7-e7s"/>
+                            <constraint firstItem="RA3-fS-qUw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="7ab-hH-6CJ"/>
+                            <constraint firstItem="Z67-Z1-Hca" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5" id="B7q-w8-AVg"/>
+                            <constraint firstItem="GcK-jl-hFe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="E2z-3A-3vd"/>
+                            <constraint firstItem="Z67-Z1-Hca" firstAttribute="top" secondItem="sVL-rd-jId" secondAttribute="bottom" constant="8" id="FBh-vo-GEh"/>
+                            <constraint firstItem="RA3-fS-qUw" firstAttribute="top" secondItem="e9S-74-9EI" secondAttribute="bottom" constant="-111" id="GQM-0H-7Qm"/>
+                            <constraint firstItem="YPR-le-Hp3" firstAttribute="top" secondItem="Z67-Z1-Hca" secondAttribute="bottom" constant="8" id="VMN-hB-Bog"/>
+                            <constraint firstItem="YPR-le-Hp3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Xbm-VS-t4x"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GcK-jl-hFe" secondAttribute="bottom" constant="288" id="Yrt-j7-jg6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RA3-fS-qUw" secondAttribute="trailing" constant="149" id="dFQ-yj-htW"/>
+                            <constraint firstItem="sVL-rd-jId" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="dIZ-8O-tSK"/>
+                            <constraint firstItem="qkb-TT-QnR" firstAttribute="top" secondItem="YPR-le-Hp3" secondAttribute="bottom" constant="8" id="e0x-xS-SYj"/>
+                            <constraint firstItem="qkb-TT-QnR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="4.5" id="eIB-F0-ngv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RA3-fS-qUw" secondAttribute="bottom" constant="-26" id="eOc-gY-pY6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sVL-rd-jId" secondAttribute="trailing" constant="10" id="iMc-IL-qEx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YPR-le-Hp3" secondAttribute="trailing" constant="10" id="mJP-ob-vGv"/>
+                            <constraint firstItem="e9S-74-9EI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="o59-2s-Pzd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GcK-jl-hFe" secondAttribute="trailing" constant="37" id="oLO-fY-TMf"/>
+                            <constraint firstItem="e9S-74-9EI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="s5r-dR-IS0"/>
+                            <constraint firstItem="sVL-rd-jId" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="11" id="vxW-GQ-lAS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerTextArea" destination="GcK-jl-hFe" id="6Pi-HW-eI3"/>
+                        <outlet property="questionTextField" destination="YPR-le-Hp3" id="2xg-0W-6O5"/>
+                        <outlet property="speechBubble" destination="e9S-74-9EI" id="ojp-QM-YvF"/>
+                        <outlet property="submitQuestionButton" destination="qkb-TT-QnR" id="LcB-zz-8z9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="802" height="337"/>
+        <image name="robot58" width="263" height="326"/>
+        <image name="speech-bubble" width="600" height="447"/>
+    </resources>
+</document>
