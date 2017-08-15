@@ -23,7 +23,6 @@ class HTTPClient {
     }
 
     func makeRequest(to urlString: String, with question: String, completion: @escaping (Data?) -> ()) {
-//        http://localhost/response?text=string
         guard let parameterString = question.addingPercentEncodingForURLQueryValue() else {
             return
         }

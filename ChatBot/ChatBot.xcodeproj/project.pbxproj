@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4C1484041F38ED4C00192DF5 /* AppGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1484031F38ED4C00192DF5 /* AppGlobals.swift */; };
 		4C1484061F38ED7A00192DF5 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1484051F38ED7A00192DF5 /* HTTPClient.swift */; };
-		4C14840A1F3A03C700192DF5 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1484091F3A03C700192DF5 /* JSONHelper.swift */; };
 		4CA1D51B1F33AFC5007CF6F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1D51A1F33AFC5007CF6F8 /* AppDelegate.swift */; };
 		4CA1D51D1F33AFC5007CF6F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1D51C1F33AFC5007CF6F8 /* ViewController.swift */; };
 		4CA1D5201F33AFC5007CF6F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA1D51E1F33AFC5007CF6F8 /* Main.storyboard */; };
@@ -20,7 +19,6 @@
 /* Begin PBXFileReference section */
 		4C1484031F38ED4C00192DF5 /* AppGlobals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGlobals.swift; sourceTree = "<group>"; };
 		4C1484051F38ED7A00192DF5 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		4C1484091F3A03C700192DF5 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 		4CA1D5171F33AFC5007CF6F8 /* ChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA1D51A1F33AFC5007CF6F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CA1D51C1F33AFC5007CF6F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 		4C1483FE1F38ECD600192DF5 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				4C1484091F3A03C700192DF5 /* JSONHelper.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -214,7 +211,6 @@
 				4C1484041F38ED4C00192DF5 /* AppGlobals.swift in Sources */,
 				4C1484061F38ED7A00192DF5 /* HTTPClient.swift in Sources */,
 				4CA1D51B1F33AFC5007CF6F8 /* AppDelegate.swift in Sources */,
-				4C14840A1F3A03C700192DF5 /* JSONHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
